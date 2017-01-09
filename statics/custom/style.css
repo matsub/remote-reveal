@@ -1,0 +1,75 @@
+section{
+    margin: 32px auto;
+    width: 90%;
+    border-radius: 6px;
+    border: solid 2px SteelBlue;
+}
+h1 {
+    margin: 0;
+    padding: 8px;
+    text-align: center;
+    font-size: 1.6em;
+    color: white;
+    background: SteelBlue;
+}
+h2 {
+    margin: 0;
+    padding: 8px;
+    text-align: left;
+    font-size: 1.2em;
+    color: white;
+    background: SteelBlue;
+}
+h3 {
+    padding: 0 8px;
+    text-align: left;
+    font-size: 1.0em;
+}
+p { padding: 0 8px; }
+
+div#buttons{
+    padding: 16px 0;
+    display: flex;
+    flex-direction: column;
+}
+div#buttons div{
+    display: flex;
+    justify-content: space-around;
+}
+
+button{
+    width: 80px;
+    height: 80px;
+    border-radius: 40px;
+    border: solid 2px SteelBlue;
+    background: AliceBlue;
+}
+button:active {
+    border: solid 2px CadetBlue;
+    background: GhostWhite;
+}
+
+button div{
+    width: 0;
+    height: 0;
+    position: relative;
+    border: solid 20px transparent;
+}
+button#up div{
+    top: -12px;
+    right: -12px;
+    border-bottom: solid 28px SteelBlue;
+}
+button#left div{
+    left: -6px;
+    border-right: solid 28px SteelBlue;
+}
+button#right div{
+    right: -22px;
+    border-left: solid 28px SteelBlue;
+}
+button#down div{
+    bottom: -14px;
+    right: -12px;
+    border-top: solid 28px SteelBlue;
+}

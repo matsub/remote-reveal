@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Remote Control Client</title>
+		<link href="statics/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+		<link href="statics/custom/style.css" rel="stylesheet">
+	</head>
+	<body>
+		<section>
+			<h1>Reveal.js Controller</h1>
+			<div id="buttons">
+				<div>
+					<button id="up"><div></div></button>
+				</div>
+				<div>
+					<button id="left"><div></div></button>
+					<button id="right"><div></div></button>
+				</div>
+				<div>
+					<button id="down"><div></div></button>
+				</div>
+			</div>
+			<h2>Page Informations:</h2>
+			<div>
+				<h3>Page: <span id="display"></span></h3>
+				<h3>Notes:</h3>
+				<p id="notes"></p>
+			</div>
+		</section>
+		<script src="statics/jquery/dist/jquery.min.js"></script>
+		<script src="statics/bootstrap/dist/js/bootstrap.min.js"></script>
+		<script src="https://cdn.pubnub.com/pubnub-3.16.4.min.js"></script>
+		<script src="statics/custom/remote-control-client.js"></script>
+	</body>
+</html>
