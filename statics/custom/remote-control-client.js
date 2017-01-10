@@ -24,4 +24,7 @@ jQuery(document).ready(function() {
         var targetId = jQuery(this).attr('id');
         buttonCommand(targetId);
     });
+    jQuery('input').change(function (eventObject) {
+        jQuery('.buttons').toggle();
+    });
 });
