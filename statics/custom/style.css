@@ -4,7 +4,7 @@ section {
     border-radius: 6px;
     border: solid 2px SteelBlue;
 }
-h1, h2 {
+h1 {
     margin: 0;
     padding: 8px;
     text-align: center;
@@ -12,8 +12,6 @@ h1, h2 {
     color: white;
     background: SteelBlue;
 }
-h2 { text-align: left; font-size: 1.2em; }
-h3 { padding: 0 8px; font-size: 1.0em; }
 p { padding: 0 8px; }
 
 div#arrow-mode { display: none; }
@@ -28,9 +26,9 @@ div.buttons div {
 }
 
 /* mode switch */
-header {
+div#mode-switch {
     width: 180px;
-    margin: 32px auto;
+    margin: 16px auto;
     position: relative;
 }
 input { display: none; }
@@ -77,7 +75,7 @@ input:checked + label .toggle-mode { margin-left: 0; }
 input:checked + label .toggle-button { right: 0; }
 
 /* control buttons */
-button {
+.buttons button {
     width: 80px;
     height: 80px;
     border-radius: 40px;
@@ -97,19 +95,39 @@ button div {
 }
 button#up div {
     top: -12px;
-    right: -12px;
+    right: -10px;
     border-bottom: solid 28px SteelBlue;
 }
 button#left div, button#prev div {
-    left: -6px;
+    left: -10px;
     border-right: solid 28px SteelBlue;
 }
 button#right div, button#next div {
-    right: -22px;
+    right: -18px;
     border-left: solid 28px SteelBlue;
 }
 button#down div {
     bottom: -14px;
-    right: -12px;
+    right: -10px;
     border-top: solid 28px SteelBlue;
+}
+
+/* stopwatch */
+div#stopwatch {
+    margin: 16px auto;
+    text-align: center;
+}
+div#stopwatch time {
+    display: block;
+    margin: 8px;
+    font-size: 1.6em;
+    color: Gray;
+}
+div#stopwatch button {
+    height: 28px;
+    font-size: 0.8em;
+    color: SteelBlue;
+    background-color: LightGray;
+    border: solid 2px SteelBlue;
+    border-radius: 4px;
 }

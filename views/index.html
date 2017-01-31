@@ -7,15 +7,15 @@
 		<link href="statics/custom/style.css" rel="stylesheet">
 	</head>
 	<body>
-		<header>
-			<input type="checkbox" id="mode" checked>
-			<label for="mode">
-				<span class="toggle-mode"></span>
-				<span class="toggle-button"></span>
-			</label>
-		</header>
 		<section>
-			<h1>Reveal.js Controller</h1>
+			<h1>CONTROLLER</h1>
+			<div id="mode-switch">
+				<input type="checkbox" id="mode" checked>
+				<label for="mode">
+					<span class="toggle-mode"></span>
+					<span class="toggle-button"></span>
+				</label>
+			</div>
 			<div id="next-prev-mode" class="buttons">
 				<div>
 					<button id="prev"><div></div></button>
@@ -34,12 +34,15 @@
 					<button id="down"><div></div></button>
 				</div>
 			</div>
-			<h2>Page Informations:</h2>
-			<div>
-				<h3>Page: <span id="display"></span></h3>
-				<h3>Notes:</h3>
-				<p id="notes"></p>
+			<h1>STOPWATCH</h1>
+			<div id="stopwatch">
+				<time>00:00</time>
+				<button id="start">START</button>
+				<button id="stop" style="display:none">STOP</button>
+				<button id="reset">RESET</button>
 			</div>
+			<h1>NOTE</h1>
+			<p id="note"></p>
 		</section>
 		<script src="statics/jquery/dist/jquery.min.js"></script>
 		<script src="https://cdn.pubnub.com/pubnub-3.16.4.min.js"></script>
