@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 
+import os
 import bottle
 from bottle import (
     jinja2_template as template,
@@ -12,8 +13,8 @@ from bottle import (
 
 
 app = bottle.Bottle()
-SECRET_KEY = 'I am super secret.'
-PASSWORD = 'password'
+SECRET_KEY = os.environ.get("RR_SECRET")
+PASSWORD = os.environ.get("RR_PSWD")
 
 
 def check_password(password):
@@ -45,4 +46,4 @@ def statics(filepath):
 
 
 if __name__ == '__main__':
-    app.run(port=8080)
+    app.run(host="0.0.0.0", port=8080)
