@@ -14,8 +14,8 @@ This is an application to control a page of reveal.js remotely with [reveal-js-p
 
 ```javascript
 var pubnub = PUBNUB({
-    publish_key : '---INSERT KEY HERE---',
-    subscribe_key : '---INSERT KEY HERE---',
+    publish_key : '---INSERT PUB---',
+    subscribe_key : '---INSERT SUB---',
     ssl: true,
 });
 ```

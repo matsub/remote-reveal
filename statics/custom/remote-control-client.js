@@ -1,7 +1,7 @@
 /* remote controls of reveal.js */
 var pubnub = PUBNUB({
-    publish_key : '---INSERT KEY HERE---',
-    subscribe_key : '---INSERT KEY HERE---',
+    publish_key : '---INSERT PUB---',
+    subscribe_key : '---INSERT SUB---',
     ssl: true,
 });
 
